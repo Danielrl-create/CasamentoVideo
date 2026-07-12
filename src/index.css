@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --color-gold-50: #fbf8f2;
+  --color-gold-100: #f4eae0;
+  --color-gold-200: #ebd8c0;
+  --color-gold-300: #ddbf97;
+  --color-gold-400: #cfa26e;
+  --color-gold-500: #c1884e;
+  --color-gold-600: #aa713b;
+  --color-gold-700: #8e582f;
+  --color-gold-800: #74442a;
+  --color-gold-950: #3f2214;
+  --color-rose-gold: #B76E79;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF6F0;
+    color: #2F2E2C;
+  }
+}
+
+/* Custom heartbeat/sparkle animations */
+@keyframes soft-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.08); opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-soft-pulse {
+  animation: soft-pulse 3s infinite ease-in-out;
+}
+
+.animate-float {
+  animation: float 4s infinite ease-in-out;
+}
+

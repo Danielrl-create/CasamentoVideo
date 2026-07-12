@@ -1,0 +1,6 @@
+{
+  "name": "Mensagens de Casamento",
+  "description": "Grave e salve mensagens de vídeo personalizadas para os noivos diretamente do seu celular.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
