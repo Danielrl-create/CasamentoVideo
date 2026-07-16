@@ -2,9 +2,13 @@ import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import firebaseConfig from '../firebase-applet-config.json';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <GoogleOAuthProvider clientId={firebaseConfig.oAuthClientId}>
+      <App />
+    </GoogleOAuthProvider>
   </StrictMode>,
 );
