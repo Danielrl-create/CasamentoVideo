@@ -39,9 +39,9 @@ import {
 } from 'lucide-react';
 
 const SLIDESHOW_IMAGES = [
-  'https://picsum.photos/seed/love1/800/600',
-  'https://picsum.photos/seed/love2/800/600',
-  'https://picsum.photos/seed/love3/800/600'
+  '/images/slide1.jpg',
+  '/images/slide2.jpg',
+  '/images/slide3.jpg'
 ];
 
 function Slideshow() {
